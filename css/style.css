@@ -19,6 +19,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.h1 {   display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Estilos para los campos del formulario */
 .field {
     display: flex;
@@ -37,6 +42,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 /* Estilos para pantallas pequeñas */

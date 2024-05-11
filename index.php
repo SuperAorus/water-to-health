@@ -13,6 +13,7 @@
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="sobre_nosotros.php">Sobre nosotros</a></li>
                 <li><a href="contactanos.php">Contáctanos</a></li>
+                <li><a href="mostrar_datos.php">mostrar datos</a></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +56,10 @@
         </div>
         <div class="button">
             <input type="submit" value="Captar">
-            <button onclick="location.href='mostrar_datos.php'">Mostrar datos</button>
+            
+        </div>
+        <div >
+        
         </div>
     </form>
 </body>
