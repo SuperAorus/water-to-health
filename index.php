@@ -2,27 +2,45 @@
 <html>
 <head>
     <title>Formulario de captación</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="sobre_nosotros.php">Sobre nosotros</a></li>
-                <li><a href="contactanos.php">Contáctanos</a></li>
-                <li><a href="mostrar_datos.php">mostrar datos</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+
+    
+        <div class="barra">
+            <a class="logo" href="index.php">
+                <h1 class="logo__nombre no-margin centrar-texto">Water <span class="logo__bold">To Health</span></h1>
+            </a>
+
+            <nav class="navegacion">
+
+                <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+
+                <a href="contacto.html" class="navegacion__enlace">Contactanos</a>
+
+                <a href="mostrar_datos.php" class="navegacion__enlace">Mostrar Datos</a>
+
+            </nav>
+        </div>
+    
+
+</header>
 
 
-</body>
-</html>
+<section class="hero">
+    <h2>Welcome</h2>
+    <h4>To</h4>
+    <h1>Water To Health</h1>
+</section>
 
-    <h1>Formulario de captación</h1>
+    <div class="formh1">
+        <h1>Formulario de captación</h1>
+    </div>
+
     <form action="registro.php" method="post" class="container">
         <!-- campos del formulario -->
         <div class="field">
@@ -55,12 +73,10 @@
             <input type="date" name="fecha" id="fecha" required>
         </div>
         <div class="button">
-            <input type="submit" value="Captar">
-            
+            <input type="submit" value="Enviar">
         </div>
-        <div >
-        
-        </div>
+
+
     </form>
 </body>
 </html>
