@@ -4,8 +4,8 @@ require_once 'conexion.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
-    $direccion = $_POST["direccion"];
     $numero_telefono = $_POST["numero_telefono"];
+    $direccion = $_POST["direccion"];
     $dueño = $_POST["dueño"] == "Sí"? "Sí" : "No";
     $tipo_agua = $_POST["tipo_agua"];
     $fecha = $_POST["fecha"];

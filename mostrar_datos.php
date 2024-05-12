@@ -11,8 +11,8 @@ if ($result->num_rows > 0) {
             <tr>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Dirección</th>
                 <th>Número de teléfono</th>
+                <th>Dirección</th>
                 <th>Dueño</th>
                 <th>Tipo de agua</th>
                 <th>Fecha</th>
@@ -23,8 +23,8 @@ if ($result->num_rows > 0) {
         echo "<tr>";
         echo "<td>". $row["nombre"]. "</td>";
         echo "<td>". $row["correo"]. "</td>";
-        echo "<td}". $row["direccion"]. "</td>";
         echo "<td>". $row["numero_telefono"]. "</td>";
+        echo "<td}". $row["direccion"]. "</td>";
         echo "<td>". $row["dueño"]. "</td>";
         echo "<td>". $row["tipo_agua"]. "</td>";
         echo "<td>". $row["fecha"]. "</td>";

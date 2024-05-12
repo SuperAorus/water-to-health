@@ -32,9 +32,6 @@
 
 
 <section class="hero">
-    <h2>Welcome</h2>
-    <h4>To</h4>
-    <h1>Water To Health</h1>
 </section>
 
     <div class="formh1">
