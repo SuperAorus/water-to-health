@@ -272,7 +272,7 @@ img {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 20px  ;
     box-shadow: 0 5px 15px rgba( 0, 0, 0, 0.06);
     z-index: 999;
@@ -301,16 +301,10 @@ img {
 /** nav **/
 
 
-.barra {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 @media (min-width: 768px) { 
     .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     } 
 }
 
