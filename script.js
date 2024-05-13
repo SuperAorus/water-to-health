@@ -11,12 +11,12 @@ document.addEventListener('click', (event) => {
     }
 });
 
-const header = document.querySelector('.header');
 
 window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
     if (window.pageYOffset > 0) {
-        header.style.opacity = '0.8';
+        header.classList.add('oscuro');
     } else {
-        header.style.opacity = '1';
+        header.classList.remove('oscuro');
     }
 });

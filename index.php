@@ -33,7 +33,9 @@
 
 
 <section class="hero">
-
+    <div>
+        <a href="index.php"><img src="img/logo.webp" alt=""></a>
+    </div>
 </section>
 
 
@@ -118,19 +120,4 @@
     </div>   
     <script src="script.js"></script>
 </body>
-
-    <script>
-    const btnMenu = document.querySelector('.navegacion__boton');
-    const menu = document.querySelector('.navegacion__lista');
-
-    btnMenu.addEventListener('click', () => {
-        menu.classList.toggle('abierto');
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!event.target.matches('.navegacion__boton') &&!event.target.matches('.navegacion__lista') &&!event.target.matches('.navegacion__enlace')) {
-            menu.classList.remove('abierto');
-        }
-    });
-    </script>
 </html>

@@ -110,7 +110,7 @@ img {
 .header {
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
     padding: 30px;
     z-index: 999;
@@ -126,8 +126,8 @@ img {
     color: var(--blanco);
 }
 
-.header.transparente {
-    background-color: rgba(0, 0, 0, 0.1);
+.header.oscuro {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 /** nav **/
 
@@ -264,7 +264,7 @@ img {
 
 
 .hero {
-    background-image: url(../img/background.jpg);
+    background-image: url(../video/1.mp4);
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -272,9 +272,11 @@ img {
     padding: 0 80px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+
 }
+
 
 .hero h1 {
     padding-right: 5rem;
