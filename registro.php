@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "El correo electrónico ya existe en la base de datos.";
     } else {
         // Registrar los datos del formulario
-        $sql = "INSERT INTO peticiones (nombre_completo, correo, numero_telefono, direccion, vivienda, tipo_agua, menores, mayores, mascota, fecha) 
+        $sql = "INSERT INTO peticiones (nombre_completo, correo, numero_telefono, direccion, vivienda, tipo_agua, menores, mayores, mascota) 
         VALUES ('$nombre_completo', '$correo', '$numero_telefono', '$direccion', '$vivienda', '$tipo_agua', '$menores', '$mayores', '$mascota')";
 
         if ($conn->query($sql) === TRUE) {
