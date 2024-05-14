@@ -189,7 +189,7 @@ img {
     display: none;
 }
 
- /**  Video de fondoo **/
+ /**  Video de fondo **/
 #background-video {
     position: fixed;
     top: 0;
@@ -410,3 +410,4 @@ footer {
             display: block;
         }
     }
+
