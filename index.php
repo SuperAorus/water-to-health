@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" xml:lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-
+<!--
 <header class="header">
     <div class="barra">
         <a class="logo" href="index.php">
@@ -35,22 +35,25 @@
         </nav>
     </div>
 </header>
+-->
 
 
+ 
 <section class="hero">
-     <div>
-        <a href="index.php"><img src="img/logo.webp" alt=""></a>
-    </div>
+
 </section>
-
-
+    <div id="background-video">
+                <video autoplay muted loop>
+                    <source src="video/2.mp4" type="video/mp4">
+                </video>
+    </div>
 
     <div class="formh1">
-        <h1>Form</h1>
+        <a href="index.php"><img src="img/logo.webp" alt=""></a>
     </div>
 
         <form  class="formulario" action="registro.php" method="post" >
-            <fieldset>
+            <fieldset class="pd-sm">
             <legend> Aplica llenando todos los campos</legend>
             <div class="contenedor-campos">
                 <div class="form-group">
@@ -127,7 +130,10 @@
             </div>
             </fieldset>
         </form>
-   
+    
+        <footer>
+            <p>Water to Health all right reserved</p>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>

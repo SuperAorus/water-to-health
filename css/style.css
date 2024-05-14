@@ -75,14 +75,14 @@ img {
 
 /** header **/ 
 
-.header {
-    position: fixed;
+.header {    
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 30px;
     z-index: 999;
     transition: opacity 0.3s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .header a {
@@ -94,9 +94,7 @@ img {
     color: var(--blanco);
 }
 
-.header.oscuro {
-    background-color: rgba(0, 0, 0, 0.9);
-}
+
 /** nav **/
 
 @media (min-width: 768px) { 
@@ -182,7 +180,7 @@ img {
 
 .navegacion__enlace a {
     text-decoration: none;
-    color: #fff;
+    color: var(--primario);
     font-size: 1.2rem;
     padding: 10px;
 }
@@ -191,42 +189,21 @@ img {
     display: none;
 }
 
-
-/** HERO **/
-
-
-.hero {
-    background-image: url(../video/1.mp4);
-    height: 90vh;
+ /**  Video de fondoo **/
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    height: 100%;
+    z-index: -100;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.hero h1 {
-    padding-right: 5rem;
-    color: var(--blanco)  ;
-    text-transform: uppercase;
-    animation: reverse;
-}
-
-.hero h4 {
-    padding-right: 16rem;
-    padding-bottom: 15px;
-    color: #fff;
-}
-
-.hero h2 {
-    padding-right: 10rem;
-    color: #fff;
-}
 html {
     box-sizing: border-box;
     font-size: 62.5%; /** 1rem = 10px **/
@@ -240,7 +217,6 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
-
 }
 
 
@@ -258,112 +234,12 @@ body {
     text-align: center;
 }
 
-/* Estilos para el contenedor del formulario 
-
-.form-container {           
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-}
-      
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="tel"],
-.form-container select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-      
-.form-container .submit-button {
-    text-align: center;
-}
-      
-.form-container .submit-button input[type="submit"] {
-    background-color: var(--primario);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-.form-group {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
-select:focus {
-        border-color: #4CAF50;
-}
-
-input[type="submit"] {
-    background-color: var(--primario);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-.submit-button {
-    margin-top: 20px;
-    text-align: center;
-}
-
-
-
-.form-container label,
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="tel"],
-.form-container select {
-    width: 100%;
-    margin-bottom: 10px;
- }
-
- */
 
 /** nuevo form**/
 
 .formh1 {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .formulario {
@@ -373,6 +249,9 @@ input[type="submit"] {
     padding: 2rem;
     border-radius: 1rem ;
     border: solid 1px var(--primario);
+    background-color: var(--blanco);
+    opacity: .8;
+    margin-top: 2rem;
 
 }
 
@@ -430,15 +309,16 @@ input[type="submit"] {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="tel"],
-.form-group select {
+.form-group select  {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
+ 
 .formulario .submit-button {
     text-align: center;
 }
@@ -453,7 +333,9 @@ input[type="submit"] {
     width: 50%;
 }
 
-
+footer {
+    text-align: center;
+}
 
       /** MEDIA QUERYS**/
 
@@ -465,10 +347,24 @@ input[type="submit"] {
 
         .formulario {
             flex-direction: column;
+            align-items: center;
+            opacity: .7;
         }
 
         .form-group {
             width: 100%;
+
+        }
+
+        .formulario .pd-sm {
+            padding: 1rem;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select  {
+            border: 1px solid #000000;
         }
 
         /**  Navegacion_boton **/
