@@ -39,7 +39,7 @@
 
     <div id="background-video">
                 <video autoplay muted loop>
-                    <source src="video/2.mp4" type="video/mp4">
+                    <source src="video/1.mp4" type="video/mp4">
                 </video>
     </div>
 
