@@ -337,6 +337,28 @@ footer {
     text-align: center;
 }
 
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    top: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+
+}
+
+.fa-whatsapp {
+    font-size: 60px;
+
+}
+.float:hover {
+    background-color: #25e36b;
+}
       /** MEDIA QUERYS**/
 
       @media (max-width: 768px) {

@@ -37,6 +37,10 @@
 </header>
 -->
 
+    <a href="http://wa.me/50671382752" target="blank" class="float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <div id="background-video">
                 <video autoplay muted loop>
                     <source src="video/1.mp4" type="video/mp4">
@@ -130,5 +134,6 @@
             <p>Water to Health all right reserved</p>
         </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/801497830f.js" crossorigin="anonymous"></script>
 </body>
 </html>
